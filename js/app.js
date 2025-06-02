@@ -226,7 +226,7 @@ const info = {
     <p>Locatie: Strijkviertel, Utrecht<br>Datum: 6 sept 2025, 12:00–23:00</p>
     <h3>Bereikbaarheid</h3>
     <p>Fietsstalling gratis; Parkeren P+R Papendorp; OV via 9292.nl; Shuttlebus 12–19h, terug 21h+</p>
-    <h3>Lockers</h3><p>Kluisjes aanwezig, geen reservering.</p>
+    <h3>Lockers</h3><p>Kluisjes aanwezig,</p>
     <h3>FAQ</h3><p>Medicijnen, uit/terug niet toegestaan, kluisjes.</p>
   `,
   en: `
@@ -234,7 +234,7 @@ const info = {
     <p>Location: Strijkviertel, Utrecht<br>Date: Sept 6, 2025, 12:00–23:00</p>
     <h3>Access</h3>
     <p>Free bike parking; Car: P+R Papendorp; Public transport via 9292.nl; Shuttle bus 12–19h, return from 21h</p>
-    <h3>Lockers</h3><p>Lockers available, no reservation.</p>
+    <h3>Lockers</h3><p>Lockers available,</p>
     <h3>FAQ</h3><p>Medication rules, no re-entry, lockers info.</p>
   `
 };
