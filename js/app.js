@@ -91,7 +91,7 @@ const acts = [
     name: 'Chef\'Special', 
     desc: 'genre-blending funk-pop', 
     fullDesc: 'A four-piece from Haarlem mixing funk, pop, rock and hip-hop. Their upbeat, genre-fluid sound on songs like "Amigo" and "In Your Arms" makes for joyous, dance-floor-friendly live shows.',
-    image: 'css/images/Chef\'Special.png',
+    image: 'css/images/ChefSpecial.png',
     video: 'https://www.youtube.com/embed/l3jRIr44lss?autoplay=0&controls=1&rel=0' 
   },
   { 
