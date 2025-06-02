@@ -1,0 +1,33 @@
+{
+  "name": "❤️U Festival",
+  "short_name": "LoveU",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "scope": "./",
+  "icons": [
+    {
+      "src": "css/images/logoWhite.webp",
+      "sizes": "192x192",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "css/images/logoBlack.webp",
+      "sizes": "192x192", 
+      "type": "image/webp",
+      "purpose": "any"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>❤️</text></svg>",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "background_color": "#FFFFFF",
+  "theme_color": "#F03228",
+  "lang": "en",
+  "description": "The official ❤️U Festival 2026 app with schedules, maps, artist info, and more!",
+  "categories": ["entertainment", "music", "lifestyle"],
+  "orientation": "portrait-primary"
+}

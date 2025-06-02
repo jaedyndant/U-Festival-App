@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>❤️U Festival</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>❤️</text></svg>">
+  <link rel="icon" type="image/png" href="css/images/logoBlack.webp">
+  <link rel="apple-touch-icon" href="css/images/logoBlack.webp">
+  
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script defer src="js/app.js"></script>
+</head>
+<body>
+  <header>
+    <img id="logo" src="css/images/logoBlack.webp" alt="❤️U Festival Logo" />
+    <div class="controls">
+      <button id="install-btn">📱</button>
+      <button id="lang-toggle">NL</button>
+      <button id="theme-toggle">🌙</button>
+    </div>
+  </header>
+
+  <nav>
+    <button data-screen="home">Home</button>
+    <button data-screen="info">Info</button>
+    <button data-screen="schedule">Schedule</button>
+    <button data-screen="map">Map</button>
+    <button data-screen="lockers">Lockers</button>
+  </nav>
+
+  <main>
+    <!-- Home Screen -->
+    <section id="home" class="screen">
+      <h2>Welcome to ❤️U Festival!</h2>
+      <p>Stay tuned for live news and notifications during the festival.</p>
+      <!-- Acts Showcase -->
+      <div id="acts-list" class="acts-list"></div>
+    </section>
+
+    <!-- Info Screen -->
+    <section id="info" class="screen hidden">
+      <h2>Festival Information</h2>
+      <div id="info-content"></div>
+    </section>
+
+    <!-- Schedule Screen -->
+    <section id="schedule" class="screen hidden">
+      <h2>Schedule</h2>
+      <div id="schedule-grid"></div>
+    </section>
+
+    <!-- Map Screen -->
+    <section id="map" class="screen hidden">
+      <h2>Festival Map</h2>
+      <div id="mapid"></div>
+    </section>
+
+    <!-- Lockers Screen -->
+    <section id="lockers" class="screen hidden">
+      <h2>Locker Reservation</h2>
+      <div id="locker-content"></div>
+    </section>
+
+    <!-- PWA Install Screen -->
+    <section id="pwa-install" class="screen hidden">
+      <h2>Install Festival App</h2>
+      <div id="install-content"></div>
+    </section>
+  </main>
+
+  <!-- Floating Hearts Animation -->
+  <div class="floating-hearts">
+    <div class="floating-heart">💕</div>
+    <div class="floating-heart">💖</div>
+    <div class="floating-heart">💗</div>
+    <div class="floating-heart">💝</div>
+    <div class="floating-heart">❤️</div>
+  </div>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./service-worker.js');
+    }
+  </script>
+</body>
+</html>
