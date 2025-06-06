@@ -5,15 +5,15 @@ const htmlEl = document.documentElement;
 let darkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
 if (darkMode) htmlEl.classList.add('dark');
 
-// Initialize language
+
 htmlEl.lang = 'en';
 langToggle.textContent = 'NL';
 
-// PWA Install functionality
+
 const installBtn = document.getElementById('install-btn');
 let deferredPrompt;
 
-// Handle install button click
+
 installBtn.addEventListener('click', () => {
   showInstallPage();
 });
@@ -224,6 +224,15 @@ const info = {
   nl: `
     <h3>Algemeen & contact</h3>
     <p>Locatie: Strijkviertel, Utrecht<br>Datum: 6 sept 2025, 12:00–23:00</p>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2461.8948913910483!2d5.091678976600964!3d52.06330797196156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c666e4dc45dc5d%3A0x2efb3a303870a275!2sStrijkviertelweg%2C%20Utrecht!5e0!3m2!1sen!2snl!4v1717652651701!5m2!1sen!2snl" 
+      width="100%" 
+      height="250" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
     <h3>Bereikbaarheid</h3>
     <p>Fietsstalling gratis; Parkeren P+R Papendorp; OV via 9292.nl; Shuttlebus 12–19h, terug 21h+</p>
     <h3>Lockers</h3><p>Kluisjes aanwezig,</p>
@@ -232,12 +241,22 @@ const info = {
   en: `
     <h3>General & Contact</h3>
     <p>Location: Strijkviertel, Utrecht<br>Date: Sept 6, 2025, 12:00–23:00</p>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2461.8948913910483!2d5.091678976600964!3d52.06330797196156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c666e4dc45dc5d%3A0x2efb3a303870a275!2sStrijkviertelweg%2C%20Utrecht!5e0!3m2!1sen!2snl!4v1717652651701!5m2!1sen!2snl" 
+      width="100%" 
+      height="250" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
     <h3>Access</h3>
     <p>Free bike parking; Car: P+R Papendorp; Public transport via 9292.nl; Shuttle bus 12–19h, return from 21h</p>
     <h3>Lockers</h3><p>Lockers available,</p>
     <h3>FAQ</h3><p>Medication rules, no re-entry, lockers info.</p>
   `
 };
+
 function renderInfo() {
   document.getElementById('info-content').innerHTML = info[htmlEl.lang] || info.en;
 }
